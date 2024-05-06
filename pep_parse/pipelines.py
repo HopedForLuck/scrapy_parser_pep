@@ -25,7 +25,7 @@ class PepParsePipeline:
         return item
 
     def create_file(self):
-        results_dir = '..' / BASE_DIR / 'results'
+        results_dir = BASE_DIR / 'results'
         results_dir.mkdir(exist_ok=True)
         now = dt.datetime.now()
         now_formatted = now.strftime(DT_FORMAT)
